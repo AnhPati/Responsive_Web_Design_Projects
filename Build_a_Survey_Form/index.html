@@ -10,25 +10,20 @@
     </head>
     <body>
 
-      <header>
-
+      <main>
         <h1 id="title">Sondage de l'âme</h1>
         <p id="description">Que révèlent de simples questions? Tels des ronds dans l'eau qui se propagent...</p>
-
-      </header>
-      <main>
-
         <form id="survey-form" class="" action="sondage_ame.php" method="post">
 
           <fieldset>
             <legend>Présentations</legend>
             <div>
               <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
-              <input id="name" type="text" name="prenom" value="">
+              <input id="name" type="text" name="prenom" placeholder="Joe le hussard">
             </div>
             <div>
-              <label id="age-label" for="age">Et si je vous interroge sur le nombre de vos années ?</label>
-              <input id="name" type="number" name="age" value="">
+              <label id="number-label" for="number">Et si je vous interroge sur le nombre de vos années ?</label>
+              <input id="number" type="number" name="age" min="1" max="150" placeholder="40">
             </div>
             <div>
               <label id="continent-label" for="continent">Veuillez indiquer votre continent de résidence :</label>
@@ -42,8 +37,8 @@
               </select>
             </div>
             <div>
-              <label id="occupation-label" for="occupation">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
-              <select id="occupation" name="occupation">
+              <label id="occupation-label" for="dropdown">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
+              <select id="dropdown" name="occupation">
                 <option value="Farniente">Farniente</option>
                 <option value="Travail acharné">Travail acharné</option>
                 <option value="Rente<">Rente</option>
@@ -54,7 +49,7 @@
             </div>
             <div>
               <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
-              <input id="email" type="email" name="email" value="">
+              <input id="email" type="email" name="email" placeholder="monemail@maboite.com">
             </div>
           </fieldset>
           <fieldset>
@@ -75,7 +70,71 @@
               <label id="soleil-label" for="soleil-non">Impossible !</label>
               <input id="soleil-non" type="radio" name="soleil">
             </div>
+            <div>
+              <label id="definition-label" for="definition">Quel est l'adjectif qui vous définit le mieux ?</label>
+              <select id="definition" name="definition">
+                <option value="Aventureu.se.x">Aventureu.se.x</option>
+                <option value="Opportuniste">Opportuniste</option>
+                <option value="Prudent.e<">Prudent.e</option>
+                <option value="Patient.e">Patient.e</option>
+                <option value="Coquin.e">Coquin.e</option>
+                <option value="Blasé.e">Blasé.e</option>
+              </select>
+            </div>
+            <div>
+              <p>Parmi les activités suivantes, lesquelles aimeriez vous réaliser, que ce soit déjà ou non le cas ?</p>
+              <label id="voler-label" for="voler">Voler dans un magasin.</label>
+              <input id="voler" type="checkbox" name="activite" value="voler">
+              <label id="charite-label" for="charite">Faire don de tous ses biens matériels.</label>
+              <input id="charite" type="checkbox" name="activite" value="charite">
+              <label id="inconnu-label" for="inconnu">Coucher avec un inconnu.</label>
+              <input id="inconnu" type="checkbox" name="activite" value="inconnu">
+              <label id="lit-label" for="lit">Passer + 48h sans se lever du lit (sauf pour se laver et faire ses besoin évidement).</label>
+              <input id="lit" type="checkbox" name="activite" value="lit">
+              <label id="manger-label" for="manger">Manger du caviar.</label>
+              <input id="manger" type="checkbox" name="activite" value="manger">
+              <label id="embrasser-label" for="embrasser">Embrasser sans prévenir quelqu'un qui ne s'y attend pas.</label>
+              <input id="embrasser" type="checkbox" name="activite" value="embrasser">
+              <label id="taxi-label" for="taxi">Faire un taxi basket.</ta></label>
+              <input id="taxi" type="checkbox" name="activite" value="taxi">
+              <label id="peur-label" for="peur">Réaliser quelque chose qui vous terrifie.</label>
+              <input id="peur" type="checkbox" name="activite" value="peur">
+            </div>
+            <div>
+              <p>Pensez très fort à quelqu'un et choisissez dans la liste suivante les expressions qui vous viennent à l'esprit :</p>
+              <label id="mort-label" for="mort">Jusqu'à la mort.</label>
+              <input id="mort" type="checkbox" name="activite" value="mort">
+              <label id="laid-label" for="laid">Comme un pou.</label>
+              <input id="laid" type="checkbox" name="activite" value="laid">
+              <label id="rapidite-label" for="rapidite">Sensible à la gachette.</label>
+              <input id="rapidite" type="checkbox" name="activite" value="rapidite">
+              <label id="amour-label" for="amour">L'inaccessible.</label>
+              <input id="amour" type="checkbox" name="activite" value="amour">
+              <label id="mensonge-label" for="mensonge">Comme il respire.</label>
+              <input id="mensonge" type="checkbox" name="activite">
+              <label id="beau-label" for="beau">Comme un dieu.</label>
+              <input id="beau" type="checkbox" name="activite" value="beau">
+              <label id="fatiguant-label" for="fatiguant">A petite dose.</ta></label>
+              <input id="fatiguant" type="checkbox" name="activite" value="fatiguant">
+              <label id="sexe-label" for="sexe">La culotte qui palpite.</label>
+              <input id="sexe" type="checkbox" name="activite" value="sexe">
+            </div>
           </fieldset>
+          <fieldset>
+            <legend>Conclusions</legend>
+            <div>
+              <p>Seriez vous prêt à répondre à d'autres questionnaires ?</p>
+              <label id="questionnaire-label" for="questionnaire-oui">Avec plaisir !</label>
+              <input id="questionnaire-oui" type="radio" name="questionnaire">
+              <label id="questionnaire-label" for="questionnaire-non">Hors de question !</label>
+              <input id="questionnaire-non" type="radio" name="questionnaire">
+            </div>
+            <div>
+              <label id="commentaire-label" for="commentaire">Comment dois-je vous appeler ?</label>
+              <textarea id="commentaire" name="commentaire" rows="8" cols="80"></textarea>
+            </div>
+          </fieldset>
+          <input id="submit" type="button" value="Conclure">
 
         </form>
 
