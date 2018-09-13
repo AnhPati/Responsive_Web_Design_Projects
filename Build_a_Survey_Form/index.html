@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Sondage de l'âme</title>
+        <meta charset="utf-8">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    </head>
+    <body>
+
+      <header>
+
+        <h1 id="title">Sondage de l'âme</h1>
+        <p id="description">Que révèlent de simples questions? Tels des ronds dans l'eau qui se propagent...</p>
+
+      </header>
+      <main>
+
+        <form id="survey-form" class="" action="sondage_ame.php" method="post">
+
+          <fieldset>
+            <legend>Présentations</legend>
+            <div>
+              <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
+              <input id="name" type="text" name="prenom" value="">
+            </div>
+            <div>
+              <label id="age-label" for="age">Et si je vous interroge sur le nombre de vos années ?</label>
+              <input id="name" type="number" name="age" value="">
+            </div>
+            <div>
+              <label id="continent-label" for="continent">Veuillez indiquer votre continent de résidence :</label>
+              <select id="continent" name="continent">
+                <option value="Afrique">Afrique</option>
+                <option value="Amérique du Nord">Amérique du Nord</option>
+                <option value="Amérique du Sud<">Amérique du Sud</option>
+                <option value="Asie">Asie</option>
+                <option value="Europe">Europe</option>
+                <option value="Océanie">Océanie</option>
+              </select>
+            </div>
+            <div>
+              <label id="occupation-label" for="occupation">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
+              <select id="occupation" name="occupation">
+                <option value="Farniente">Farniente</option>
+                <option value="Travail acharné">Travail acharné</option>
+                <option value="Rente<">Rente</option>
+                <option value="Art">Art</option>
+                <option value="Voyage">Voyage</option>
+                <option value="Bien plus encore">Bien plus encore</option>
+              </select>
+            </div>
+            <div>
+              <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
+              <input id="email" type="email" name="email" value="">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Indiscrétions</legend>
+            <div>
+              <p>On peut dire que vous souriez...</p>
+              <label id="travail-label" for="travail">A la sortie du travail.</label>
+              <input id="travail" type="radio" name="sourire">
+              <label id="moquerie-label" for="moquerie">Lorsque quelqu'un se ramasse à terre.</label>
+              <input id="moquerie" type="radio" name="sourire">
+              <label id="toujours-label" for="toujours">Du réveil au coucher !</label>
+              <input id="toujours" type="radio" name="sourire">
+            </div>
+            <div>
+              <p>Pourriez vous vivre en dessous de 200 jours d'ensoleillement par an ?</p>
+              <label id="soleil-label" for="soleil-oui">C'est déjà le cas...</label>
+              <input id="soleil-oui" type="radio" name="soleil">
+              <label id="soleil-label" for="soleil-non">Impossible !</label>
+              <input id="soleil-non" type="radio" name="soleil">
+            </div>
+          </fieldset>
+
+        </form>
+
+      </main>
+      <footer>
+
+      </footer>
+
+    </body>
+
+</html>
