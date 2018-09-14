@@ -9,6 +9,23 @@ main {
   border-radius: 20px;
 }
 
-h1, p {
+h1, p, option, label {
   font-family: 'Nunito', sans-serif;
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+fieldset {
+  border-color: #FFFFFF;
+  border-style: double;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
