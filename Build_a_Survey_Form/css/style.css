@@ -1,4 +1,4 @@
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +9,18 @@ main {
   border-radius: 20px;
 }
 
-h1, p, option, label {
+hr {
+  margin: 10px 0 10px 0;
+  width: 50%;
+  color: #FFFFFF;
+}
+
+h1, p, option, label, legend {
   font-family: 'Nunito', sans-serif;
+}
+
+p, option, label {
+  font-size: 16px;
 }
 
 form {
@@ -20,6 +30,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 0 75px 0 75px;
 }
 
 fieldset {
@@ -28,4 +39,33 @@ fieldset {
   padding: 10px 20px 10px 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+fieldset > div {
+  display: flex;
+  justify-content: center;
+}
+
+#conclusions > div, #indiscretions > div {
+  flex-direction: column;
+}
+
+fieldset > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#div-dropdown {
+  flex-direction: row!important;
+}
+
+.div-label, .div-input {
+  width: 50%;
+}
+
+.div-input {} */
+
+#commentaire {
+  width: 100%;
 }
