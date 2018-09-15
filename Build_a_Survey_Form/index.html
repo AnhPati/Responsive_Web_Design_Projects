@@ -19,42 +19,62 @@
           <fieldset id="presentations">
             <legend>Présentations</legend>
             <div>
-              <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
-              <input id="name" type="text" name="prenom" placeholder="Joe le hussard">
+              <div>
+                <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
+              </div>
+              <div>
+                <input id="name" type="text" name="prenom" placeholder="Joe le hussard">
+              </div>
             </div>
             <hr>
             <div>
-              <label id="number-label" for="number">Et si je vous interroge sur le nombre de vos années ?</label>
-              <input id="number" type="number" name="age" min="1" max="150" placeholder="40">
+              <div>
+                <label id="number-label" for="number">Et si je vous interroge sur le nombre de vos années ?</label>
+              </div>
+              <div>
+                <input id="number" type="number" name="age" min="1" max="150" placeholder="40">
+              </div>
             </div>
             <hr>
             <div>
-              <label id="continent-label" for="continent">Veuillez indiquer votre continent de résidence :</label>
-              <select id="continent" name="continent">
-                <option value="Afrique">Afrique</option>
-                <option value="Amérique du Nord">Amérique du Nord</option>
-                <option value="Amérique du Sud<">Amérique du Sud</option>
-                <option value="Asie">Asie</option>
-                <option value="Europe">Europe</option>
-                <option value="Océanie">Océanie</option>
-              </select>
+              <div>
+                <label id="continent-label" for="continent">Veuillez indiquer votre continent de résidence :</label>
+              </div>
+              <div>
+                <select id="continent" name="continent">
+                  <option value="Afrique">Afrique</option>
+                  <option value="Amérique du Nord">Amérique du Nord</option>
+                  <option value="Amérique du Sud<">Amérique du Sud</option>
+                  <option value="Asie">Asie</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Océanie">Océanie</option>
+                </select>
+              </div>
             </div>
             <hr>
             <div>
-              <label id="occupation-label" for="occupation">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
-              <select id="occupation" name="occupation">
-                <option value="Farniente">Farniente</option>
-                <option value="Travail acharné">Travail acharné</option>
-                <option value="Rente<">Rente</option>
-                <option value="Art">Art</option>
-                <option value="Voyage">Voyage</option>
-                <option value="Bien plus encore">Bien plus encore</option>
-              </select>
+              <div>
+                <label id="occupation-label" for="occupation">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
+              </div>
+              <div>
+                <select id="occupation" name="occupation">
+                  <option value="Farniente">Farniente</option>
+                  <option value="Travail acharné">Travail acharné</option>
+                  <option value="Rente<">Rente</option>
+                  <option value="Art">Art</option>
+                  <option value="Voyage">Voyage</option>
+                  <option value="Bien plus encore">Bien plus encore</option>
+                </select>
+              </div>
             </div>
             <hr>
             <div>
-              <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
-              <input id="email" type="email" name="email" placeholder="monemail@maboite.com">
+              <div>
+                <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
+              </div>
+              <div>
+                <input id="email" type="email" name="email" placeholder="monemail@maboite.com">
+              </div>
             </div>
           </fieldset>
           <fieldset id="indiscretions">
@@ -62,13 +82,21 @@
             <div>
               <p>On peut dire que vous souriez...</p>
               <div>
-                <label id="travail-label" for="travail">A la sortie du travail.</label>
-                <input id="travail" type="radio" name="sourire">
+                <div>
+                  <label id="travail-label" for="travail">A la sortie du travail.</label>
+                </div>
+                <div>
+                  <input id="travail" type="radio" name="sourire">
+                </div>
               </div>
               <hr>
               <div>
-                <label id="moquerie-label" for="moquerie">Lorsque quelqu'un se ramasse à terre.</label>
-                <input id="moquerie" type="radio" name="sourire">
+                <div>
+                  <label id="moquerie-label" for="moquerie">Lorsque quelqu'un se ramasse à terre.</label>
+                </div>
+                <div>
+                  <input id="moquerie" type="radio" name="sourire">
+                </div>
               </div>
               <div>
                 <label id="toujours-label" for="toujours">Du réveil au coucher !</label>
@@ -79,12 +107,20 @@
             <div>
               <p>Pourriez vous vivre en dessous de 200 jours d'ensoleillement par an ?</p>
               <div>
-                <label id="soleil-label" for="soleil-oui">C'est déjà le cas...</label>
-                <input id="soleil-oui" type="radio" name="soleil">
+                <div>
+                  <label id="soleil-label" for="soleil-oui">C'est déjà le cas...</label>
+                </div>
+                <div>
+                  <input id="soleil-oui" type="radio" name="soleil">
+                </div>
               </div>
               <div>
-                <label id="soleil-label" for="soleil-non">Impossible !</label>
-                <input id="soleil-non" type="radio" name="soleil">
+                <div>
+                  <label id="soleil-label" for="soleil-non">Impossible !</label>
+                </div>
+                <div>
+                  <input id="soleil-non" type="radio" name="soleil">
+                </div>
               </div>
             </div>
             <hr>
@@ -103,72 +139,136 @@
             <div>
               <p>Parmi les activités suivantes, lesquelles aimeriez vous réaliser, que ce soit déjà ou non le cas ?</p>
               <div>
-                <label id="voler-label" for="voler">Voler dans un magasin.</label>
-                <input id="voler" type="checkbox" name="activite" value="voler">
+                <div>
+                  <label id="voler-label" for="voler">Voler dans un magasin.</label>
+                </div>
+                <div>
+                  <input id="voler" type="checkbox" name="activite" value="voler">
+                </div>
               </div>
               <div>
-                <label id="charite-label" for="charite">Faire don de tous ses biens matériels.</label>
-                <input id="charite" type="checkbox" name="activite" value="charite">
+                <div>
+                  <label id="charite-label" for="charite">Faire don de tous ses biens matériels.</label>
+                </div>
+                <div>
+                  <input id="charite" type="checkbox" name="activite" value="charite">
+                </div>
               </div>
               <div>
-                <label id="inconnu-label" for="inconnu">Coucher avec un inconnu.</label>
-                <input id="inconnu" type="checkbox" name="activite" value="inconnu">
+                <div>
+                  <label id="inconnu-label" for="inconnu">Coucher avec un inconnu.</label>
+                </div>
+                <div>
+                  <input id="inconnu" type="checkbox" name="activite" value="inconnu">
+                </div>
               </div>
               <div>
-                <label id="lit-label" for="lit">Passer + 48h sans se lever du lit (sauf pour se laver et faire ses besoin évidement).</label>
-                <input id="lit" type="checkbox" name="activite" value="lit">
+                <div>
+                  <label id="lit-label" for="lit">Passer + 48h sans se lever du lit (sauf pour se laver et faire ses besoin évidement).</label>
+                </div>
+                <div>
+                  <input id="lit" type="checkbox" name="activite" value="lit">
+                </div>
               </div>
               <div>
-                <label id="manger-label" for="manger">Manger du caviar.</label>
-                <input id="manger" type="checkbox" name="activite" value="manger">
+                <div>
+                  <label id="manger-label" for="manger">Manger du caviar.</label>
+                </div>
+                <div>
+                  <input id="manger" type="checkbox" name="activite" value="manger">
+                </div>
               </div>
               <div>
-                <label id="embrasser-label" for="embrasser">Embrasser sans prévenir quelqu'un qui ne s'y attend pas.</label>
-                <input id="embrasser" type="checkbox" name="activite" value="embrasser">
+                <div>
+                  <label id="embrasser-label" for="embrasser">Embrasser sans prévenir quelqu'un qui ne s'y attend pas.</label>
+                </div>
+                <div>
+                  <input id="embrasser" type="checkbox" name="activite" value="embrasser">
+                </div>
               </div>
               <div>
-                <label id="taxi-label" for="taxi">Faire un taxi basket.</ta></label>
-                <input id="taxi" type="checkbox" name="activite" value="taxi">
+                <div>
+                  <label id="taxi-label" for="taxi">Faire un taxi basket.</label>
+                </div>
+                <div>
+                  <input id="taxi" type="checkbox" name="activite" value="taxi">
+                </div>
               </div>
               <div>
-                <label id="peur-label" for="peur">Réaliser quelque chose qui vous terrifie.</label>
-                <input id="peur" type="checkbox" name="activite" value="peur">
+                <div>
+                  <label id="peur-label" for="peur">Réaliser quelque chose qui vous terrifie.</label>
+                </div>
+                <div>
+                  <input id="peur" type="checkbox" name="activite" value="peur">
+                </div>
               </div>
             </div>
             <hr>
             <div>
               <p>Pensez très fort à quelqu'un et choisissez dans la liste suivante les expressions qui vous viennent à l'esprit :</p>
               <div>
-                <label id="mort-label" for="mort">Jusqu'à la mort.</label>
-                <input id="mort" type="checkbox" name="activite" value="mort">
+                <div>
+                  <label id="mort-label" for="mort">Jusqu'à la mort.</label>
+                </div>
+                <div>
+                  <input id="mort" type="checkbox" name="activite" value="mort">
+                </div>
               </div>
               <div>
-                <label id="laid-label" for="laid">Comme un pou.</label>
-                <input id="laid" type="checkbox" name="activite" value="laid">
+                <div>
+                  <label id="laid-label" for="laid">Comme un pou.</label>
+                </div>
+                <div>
+                  <input id="laid" type="checkbox" name="activite" value="laid">
+                </div>
               </div>
               <div>
-                <label id="rapidite-label" for="rapidite">Sensible à la gachette.</label>
-                <input id="rapidite" type="checkbox" name="activite" value="rapidite">
+                <div>
+                  <label id="rapidite-label" for="rapidite">Sensible à la gachette.</label>
+                </div>
+                <div>
+                  <input id="rapidite" type="checkbox" name="activite" value="rapidite">
+                </div>
               </div>
               <div>
-                <label id="amour-label" for="amour">L'inaccessible.</label>
-                <input id="amour" type="checkbox" name="activite" value="amour">
+                <div>
+                  <label id="amour-label" for="amour">L'inaccessible.</label>
+                </div>
+                <div>
+                  <input id="amour" type="checkbox" name="activite" value="amour">
+                </div>
               </div>
               <div>
-                <label id="mensonge-label" for="mensonge">Comme il respire.</label>
-                <input id="mensonge" type="checkbox" name="activite">
+                <div>
+                  <label id="mensonge-label" for="mensonge">Comme il respire.</label>
+                </div>
+                <div>
+                  <input id="mensonge" type="checkbox" name="activite">
+                </div>
               </div>
               <div>
-                <label id="beau-label" for="beau">Comme un dieu.</label>
-                <input id="beau" type="checkbox" name="activite" value="beau">
+                <div>
+                  <label id="beau-label" for="beau">Comme un dieu.</label>
+                </div>
+                <div>
+                  <input id="beau" type="checkbox" name="activite" value="beau">
+                </div>
               </div>
               <div>
-                <label id="fatiguant-label" for="fatiguant">A petite dose.</ta></label>
-                <input id="fatiguant" type="checkbox" name="activite" value="fatiguant">
+                <div>
+                  <label id="fatiguant-label" for="fatiguant">A petite dose.</label>
+                <div>
+                </div>
+                  <input id="fatiguant" type="checkbox" name="activite" value="fatiguant">
+                </div>
               </div>
               <div>
-                <label id="sexe-label" for="sexe">La culotte qui palpite.</label>
-                <input id="sexe" type="checkbox" name="activite" value="sexe">
+                <div>
+                  <label id="sexe-label" for="sexe">La culotte qui palpite.</label>
+                </div>
+                <div>
+                  <input id="sexe" type="checkbox" name="activite" value="sexe">
+                </div>
               </div>
             </div>
           </fieldset>
@@ -177,18 +277,30 @@
             <div>
               <p>Seriez vous prêt à répondre à d'autres questionnaires ?</p>
               <div>
-                <label id="questionnaire-label" for="questionnaire-oui">Avec plaisir !</label>
-                <input id="questionnaire-oui" type="radio" name="questionnaire">
+                <div>
+                  <label id="questionnaire-label" for="questionnaire-oui">Avec plaisir !</label>
+                </div>
+                <div>
+                  <input id="questionnaire-oui" type="radio" name="questionnaire">
+                </div>
               </div>
               <div>
-                <label id="questionnaire-label" for="questionnaire-non">Hors de question !</label>
-                <input id="questionnaire-non" type="radio" name="questionnaire">
+                <div>
+                  <label id="questionnaire-label" for="questionnaire-non">Hors de question !</label>
+                </div>
+                <div>
+                  <input id="questionnaire-non" type="radio" name="questionnaire">
+                </div>
               </div>
             </div>
             <hr>
             <div>
-              <label id="commentaire-label" for="commentaire">Comment dois-je vous appeler ?</label>
-              <textarea id="commentaire" name="commentaire" rows="8" cols="80"></textarea>
+              <div>
+                <label id="commentaire-label" for="commentaire">Comment dois-je vous appeler ?</label>
+              </div>
+              <div>
+                <textarea id="commentaire" name="commentaire" rows="8" cols="80"></textarea>
+              </div>
             </div>
           </fieldset>
           <input id="submit" type="button" value="Conclure">
