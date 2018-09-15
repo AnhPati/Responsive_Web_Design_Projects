@@ -19,28 +19,28 @@
           <fieldset id="presentations">
             <legend>Présentations</legend>
             <div>
-              <div>
+              <div class="div-label">
                 <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
               </div>
-              <div>
+              <div class="div-input">
                 <input id="name" type="text" name="prenom" placeholder="Joe le hussard">
               </div>
             </div>
             <hr>
             <div>
-              <div>
+              <div class="div-label">
                 <label id="number-label" for="number">Et si je vous interroge sur le nombre de vos années ?</label>
               </div>
-              <div>
+              <div class="div-input">
                 <input id="number" type="number" name="age" min="1" max="150" placeholder="40">
               </div>
             </div>
             <hr>
             <div>
-              <div>
+              <div class="div-label">
                 <label id="continent-label" for="continent">Veuillez indiquer votre continent de résidence :</label>
               </div>
-              <div>
+              <div class="div-input">
                 <select id="continent" name="continent">
                   <option value="Afrique">Afrique</option>
                   <option value="Amérique du Nord">Amérique du Nord</option>
@@ -53,10 +53,10 @@
             </div>
             <hr>
             <div>
-              <div>
+              <div class="div-label">
                 <label id="occupation-label" for="occupation">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
               </div>
-              <div>
+              <div class="div-input">
                 <select id="occupation" name="occupation">
                   <option value="Farniente">Farniente</option>
                   <option value="Travail acharné">Travail acharné</option>
@@ -69,10 +69,10 @@
             </div>
             <hr>
             <div>
-              <div>
+              <div class="div-label">
                 <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
               </div>
-              <div>
+              <div class="div-input">
                 <input id="email" type="email" name="email" placeholder="monemail@maboite.com">
               </div>
             </div>
@@ -82,24 +82,24 @@
             <div>
               <p>On peut dire que vous souriez...</p>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="travail-label" for="travail">A la sortie du travail.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="travail" type="radio" name="sourire">
                 </div>
               </div>
               <hr>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="moquerie-label" for="moquerie">Lorsque quelqu'un se ramasse à terre.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="moquerie" type="radio" name="sourire">
                 </div>
               </div>
-              <div>
-                <label id="toujours-label" for="toujours">Du réveil au coucher !</label>
+              <div class="div-label">
+                <l class="div-input"abel id="toujours-label" for="toujours">Du réveil au coucher !</label>
                 <input id="toujours" type="radio" name="sourire">
               </div>
             </div>
@@ -107,98 +107,102 @@
             <div>
               <p>Pourriez vous vivre en dessous de 200 jours d'ensoleillement par an ?</p>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="soleil-label" for="soleil-oui">C'est déjà le cas...</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="soleil-oui" type="radio" name="soleil">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="soleil-label" for="soleil-non">Impossible !</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="soleil-non" type="radio" name="soleil">
                 </div>
               </div>
             </div>
             <hr>
             <div id="div-dropdown">
-              <label id="definition-label" for="dropdown">Quel est l'adjectif qui vous définit le mieux ?</label>
-              <select id="dropdown" name="definition">
-                <option value="Aventureu.se.x">Aventureu.se.x</option>
-                <option value="Opportuniste">Opportuniste</option>
-                <option value="Prudent.e<">Prudent.e</option>
-                <option value="Patient.e">Patient.e</option>
-                <option value="Coquin.e">Coquin.e</option>
-                <option value="Blasé.e">Blasé.e</option>
-              </select>
+              <div class="div-label">
+                <label id="definition-label" for="dropdown">Quel est l'adjectif qui vous définit le mieux ?</label>
+              </div>
+              <div class="div-input">
+                <select id="dropdown" name="definition">
+                  <option value="Aventureu.se.x">Aventureu.se.x</option>
+                  <option value="Opportuniste">Opportuniste</option>
+                  <option value="Prudent.e<">Prudent.e</option>
+                  <option value="Patient.e">Patient.e</option>
+                  <option value="Coquin.e">Coquin.e</option>
+                  <option value="Blasé.e">Blasé.e</option>
+                </select>
+              </div>
             </div>
             <hr>
             <div>
               <p>Parmi les activités suivantes, lesquelles aimeriez vous réaliser, que ce soit déjà ou non le cas ?</p>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="voler-label" for="voler">Voler dans un magasin.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="voler" type="checkbox" name="activite" value="voler">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="charite-label" for="charite">Faire don de tous ses biens matériels.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="charite" type="checkbox" name="activite" value="charite">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="inconnu-label" for="inconnu">Coucher avec un inconnu.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="inconnu" type="checkbox" name="activite" value="inconnu">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="lit-label" for="lit">Passer + 48h sans se lever du lit (sauf pour se laver et faire ses besoin évidement).</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="lit" type="checkbox" name="activite" value="lit">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="manger-label" for="manger">Manger du caviar.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="manger" type="checkbox" name="activite" value="manger">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="embrasser-label" for="embrasser">Embrasser sans prévenir quelqu'un qui ne s'y attend pas.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="embrasser" type="checkbox" name="activite" value="embrasser">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="taxi-label" for="taxi">Faire un taxi basket.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="taxi" type="checkbox" name="activite" value="taxi">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="peur-label" for="peur">Réaliser quelque chose qui vous terrifie.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="peur" type="checkbox" name="activite" value="peur">
                 </div>
               </div>
@@ -207,66 +211,66 @@
             <div>
               <p>Pensez très fort à quelqu'un et choisissez dans la liste suivante les expressions qui vous viennent à l'esprit :</p>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="mort-label" for="mort">Jusqu'à la mort.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="mort" type="checkbox" name="activite" value="mort">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="laid-label" for="laid">Comme un pou.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="laid" type="checkbox" name="activite" value="laid">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="rapidite-label" for="rapidite">Sensible à la gachette.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="rapidite" type="checkbox" name="activite" value="rapidite">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="amour-label" for="amour">L'inaccessible.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="amour" type="checkbox" name="activite" value="amour">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="mensonge-label" for="mensonge">Comme il respire.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="mensonge" type="checkbox" name="activite">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="beau-label" for="beau">Comme un dieu.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="beau" type="checkbox" name="activite" value="beau">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="fatiguant-label" for="fatiguant">A petite dose.</label>
                 <div>
-                </div>
+                </di class="div-input"v>
                   <input id="fatiguant" type="checkbox" name="activite" value="fatiguant">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="sexe-label" for="sexe">La culotte qui palpite.</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="sexe" type="checkbox" name="activite" value="sexe">
                 </div>
               </div>
@@ -277,25 +281,25 @@
             <div>
               <p>Seriez vous prêt à répondre à d'autres questionnaires ?</p>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="questionnaire-label" for="questionnaire-oui">Avec plaisir !</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="questionnaire-oui" type="radio" name="questionnaire">
                 </div>
               </div>
               <div>
-                <div>
+                <div class="div-label">
                   <label id="questionnaire-label" for="questionnaire-non">Hors de question !</label>
                 </div>
-                <div>
+                <div class="div-input">
                   <input id="questionnaire-non" type="radio" name="questionnaire">
                 </div>
               </div>
             </div>
             <hr>
             <div>
-              <div>
+              <div class="div-label">
                 <label id="commentaire-label" for="commentaire">Comment dois-je vous appeler ?</label>
               </div>
               <div>
