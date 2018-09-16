@@ -103,6 +103,31 @@ form {
   flex-direction: column;
 }
 
+.div-fieldset > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.div-label, .div-input {
+  display: flex;
+}
+
+.div-label {
+  width: 50%;
+}
+
+.div-input {
+  width: 50%;
+  flex-direction: column;
+}
+
+.div-input > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 hr {
   width: 50%;
   display: inline-block;
