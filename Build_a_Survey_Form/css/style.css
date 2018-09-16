@@ -213,4 +213,20 @@ input[type="text"], input[type="number"], input[type="email"], select, textarea 
     align-items: flex-start;
     flex-direction: column;
   }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  legend {
+    font-size: 2.6em;
+  }
+
+  #description {
+    font-size: 3em;
+  }
+
+  p, label, input[type="text"], input[type="number"], select {
+    font-size: 1.8em;
+  }
 }
