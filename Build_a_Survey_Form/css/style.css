@@ -108,7 +108,7 @@ legend {
   font-weight: 500;
 }
 
-p, label, input[text], input[number], select {
+p, label, input[type="text"], input[type="number"], select {
   font-size: 1em;
   font-weight: 400;
 }
@@ -180,8 +180,12 @@ hr {
   align-self: center;
 }
 
-input[text] {
-
+input[type="text"], input[type="number"], input[type="email"], select, textarea {
+  border-radius: 10px;
+  border: 5px double #053671;
+  padding: 5px;
+  color: #053671;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -196,6 +200,10 @@ input[text] {
 }
 
 @media screen and (max-width: 680px) {
+  .div-fieldset > div {
+    justify-content: center;
+  }
+
   main {
     padding: 10px 15px 10px 15px;
     margin: 0;
