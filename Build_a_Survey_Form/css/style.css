@@ -1,4 +1,4 @@
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +9,18 @@ main {
   border-radius: 20px;
 }
 
-h1, p, option, label {
+hr {
+  margin: 10px 0 10px 0;
+  width: 50%;
+  color: #FFFFFF;
+}
+
+h1, p, option, label, legend {
   font-family: 'Nunito', sans-serif;
+}
+
+p, option, label {
+  font-size: 16px;
 }
 
 form {
@@ -20,6 +30,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 0 75px 0 75px;
 }
 
 fieldset {
@@ -28,4 +39,178 @@ fieldset {
   padding: 10px 20px 10px 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+fieldset > div {
+  display: flex;
+  justify-content: center;
+}
+
+#conclusions > div, #indiscretions > div {
+  flex-direction: column;
+}
+
+fieldset > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#div-dropdown {
+  flex-direction: row!important;
+}
+
+.div-label, .div-input {
+  width: 50%;
+}
+
+.div-input {} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #053671;
+  color: #FFFFFFFF;
+  font-family: 'Nunito', sans-serif;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px 25px 20px 25px;
+}
+
+#description, h1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.6em;
+  font-weight: 700;
+}
+
+#description {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+legend {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+p, label, input[type="text"], input[type="number"], select {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#indiscretions, #conclusions {
+  margin-top: 20px;
+}
+
+.div-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-fieldset > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.div-label, .div-input {
+  display: flex;
+}
+
+.div-label {
+  width: 45%;
+  justify-content: flex-end;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.div-input {
+  width: 45%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.div-input > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+hr {
+  width: 50%;
+  display: inline-block;
+  border-style: double;
+  background-color: #FFFFFFFF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#commentaire {
+  width: 100%;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px double #053671;
+  background-color: #FFFFFF;
+  color: #053671;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 20px;
+  align-self: center;
+}
+
+input[type="text"], input[type="number"], input[type="email"], select, textarea {
+  border-radius: 10px;
+  border: 5px double #053671;
+  padding: 5px;
+  color: #053671;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .div-label, .div-input {
+    width: auto;
+  }
+
+  .div-label {
+    justify-content: center;
+    text-align: inherit;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .div-fieldset > div {
+    justify-content: center;
+  }
+
+  main {
+    padding: 10px 15px 10px 15px;
+    margin: 0;
+  }
+
+  .div-input > div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
