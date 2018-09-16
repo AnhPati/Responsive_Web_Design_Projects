@@ -66,6 +66,19 @@ fieldset > div > div {
 
 .div-input {} */
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #053671;
+  color: #FFFFFFFF;
+  font-family: 'Nunito', sans-serif;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px 25px 20px 25px;
+}
+
 #commentaire {
   width: 100%;
 }
