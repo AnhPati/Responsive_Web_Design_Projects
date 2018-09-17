@@ -24,7 +24,7 @@
                   <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
                 </div>
                 <div class="div-input">
-                  <input id="name" type="text" name="prenom" placeholder="Joe le hussard">
+                  <input id="name" type="text" name="prenom" placeholder="Joe le hussard" required>
                 </div>
               </div>
               <hr>
@@ -74,7 +74,7 @@
                   <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
                 </div>
                 <div class="div-input">
-                  <input id="email" type="email" name="email" placeholder="monemail@maboite.com">
+                  <input id="email" type="email" name="email" placeholder="monemail@maboite.com" required>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@
                       <label id="travail-label" for="travail">A la sortie du travail.</label>
                     </div>
                     <div class="qc-input">
-                      <input id="travail" type="radio" name="sourire">
+                      <input id="travail" type="radio" name="sourire" value="travail">
                     </div>
                   </div>
                   <div>
@@ -98,7 +98,7 @@
                       <label id="moquerie-label" for="moquerie">Lorsque quelqu'un se ramasse à terre.</label>
                     </div>
                     <div class="qc-input">
-                      <input id="moquerie" type="radio" name="sourire">
+                      <input id="moquerie" type="radio" name="sourire" value="moquerie">
                     </div>
                   </div>
                   <div>
@@ -106,7 +106,7 @@
                       <label class="" id="toujours-label" for="toujours">Du réveil au coucher !</label>
                     </div>
                     <div class="qc-input">
-                      <input id="toujours" type="radio" name="sourire">
+                      <input id="toujours" type="radio" name="sourire" value="toujours">
                     </div>
                   </div>
                 </div>
@@ -120,7 +120,7 @@
                       <label id="soleil-label" for="soleil-oui">C'est déjà le cas...</label>
                     </div>
                     <div class="qc-input">
-                      <input id="soleil-oui" type="radio" name="soleil">
+                      <input id="soleil-oui" type="radio" name="soleil" value="oui">
                     </div>
                   </div>
                   <div>
@@ -128,7 +128,7 @@
                       <label id="soleil-label" for="soleil-non">Impossible !</label>
                     </div>
                     <div class="qc-input">
-                      <input id="soleil-non" type="radio" name="soleil">
+                      <input id="soleil-non" type="radio" name="soleil" value="non">
                     </div>
                   </div>
                 </div>
@@ -260,7 +260,7 @@
                       <label id="mensonge-label" for="mensonge">Comme il respire.</label>
                     </div>
                     <div class="qc-input">
-                      <input id="mensonge" type="checkbox" name="activite">
+                      <input id="mensonge" type="checkbox" name="activite" value="mensonge">
                     </div>
                   </div>
                   <div>
@@ -302,7 +302,7 @@
                       <label id="questionnaire-label" for="questionnaire-oui">Avec plaisir !</label>
                     </div>
                     <div class="qc-input">
-                      <input id="questionnaire-oui" type="radio" name="questionnaire">
+                      <input id="questionnaire-oui" type="radio" name="questionnaire" value="oui">
                     </div>
                   </div>
                   <div>
@@ -310,7 +310,7 @@
                       <label id="questionnaire-label" for="questionnaire-non">Hors de question !</label>
                     </div>
                     <div class="qc-input">
-                      <input id="questionnaire-non" type="radio" name="questionnaire">
+                      <input id="questionnaire-non" type="radio" name="questionnaire" value="non">
                     </div>
                   </div>
                 </div>
@@ -326,7 +326,7 @@
               </div>
             </div>
           </fieldset>
-          <input id="submit" type="button" value="Conclure">
+          <button id="submit" type="submit" form="survey-form" value="Submit">Conclure</button>
 
         </form>
 
