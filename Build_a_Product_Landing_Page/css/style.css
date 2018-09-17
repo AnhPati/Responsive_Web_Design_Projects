@@ -1,0 +1,14 @@
+header, main, footer {
+  display: flex;
+  width: 100%;
+}
+
+header {
+  height: 100rem;
+  position: fixed;
+  z-index: 100;
+}
+
+@media screen and (max-width 1200) {
+  
+}
