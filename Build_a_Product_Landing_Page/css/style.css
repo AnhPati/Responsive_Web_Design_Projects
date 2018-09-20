@@ -118,6 +118,40 @@ h1 > span {
   padding: 5px;
 }
 
+#email {
+  border: 5px double #000000;
+padding: 10px;
+width: 200px;
+text-align: center;
+}
+
+#submit {
+  border: 5px double #000000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#fonctionnalite > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#fonctionnalite > div > div {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+#fonctionnalite img {
+  max-width: 100px;
+  margin: auto;
+}
+
 @media screen and (max-width 1200) {
 
 }
