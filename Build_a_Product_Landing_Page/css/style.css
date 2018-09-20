@@ -7,7 +7,8 @@ body {
 header, main, footer, #nav-bar ul {
   display: flex;
   width: 100%;
-  color: #26F06A;
+  /* color: #26F06A; */
+  border: 2px solid #26F06A;
 }
 
 #nav-bar {
@@ -27,11 +28,16 @@ section {
 
 a {
   text-decoration: none;
-  color: #26F06A;
+  /* color: #26F06A; */
+  border: 2px solid #26F06A;
 }
 
 li {
   list-style-type: none;
+}
+
+h1 {
+  margin: 70px 0 60px 0;
 }
 
 /*======[[3.$HEADER]]======*/
@@ -40,7 +46,8 @@ header {
   height: 10rem;
   position: fixed;
   z-index: 100;
-  background-color: #000000;
+  /* background-color: #000000; */
+  border: 2px solid #000000;
 }
 
 header a {
@@ -75,7 +82,8 @@ header a {
 /*======[[4.$MAIN]]======*/
 
 main {
-  background-color: #57816A;
+  /* background-color: #57816A; */
+  border: 2px solid #57816A;
   flex-direction: column;
   align-items: center;
 }
@@ -96,10 +104,19 @@ h1 > span {
   font-family: 'Mr Dafoe', cursive;
   font-weight: 400;
   font-size: 0.8rem;
-  top: 15px;
+  top: 60px;
   left: 350px;
 }
 
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form > div {
+  padding: 5px;
+}
 
 @media screen and (max-width 1200) {
 
