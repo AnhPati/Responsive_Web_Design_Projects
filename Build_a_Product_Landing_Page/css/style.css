@@ -145,11 +145,28 @@ text-align: center;
   display: flex;
   flex-direction: column;
   height: 200px;
+  margin: 10px;
 }
 
 #fonctionnalite img {
   max-width: 100px;
   margin: auto;
+}
+
+.fonction-texte {
+  width: 500px;
+}
+
+.fonction-img {
+  width: 300px;
+}
+
+#fonctionnalite > div:first-child .fonction-texte, #fonctionnalite > div:last-child .fonction-texte {
+  order: 2;
+}
+
+#fonctionnalite > div:first-child .fonction-img, #fonctionnalite > div:last-child .fonction-img {
+  order: 1;
 }
 
 @media screen and (max-width 1200) {
