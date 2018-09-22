@@ -12,7 +12,6 @@ header, main, footer, #nav-bar ul {
 }
 
 
-
 #nav-bar {
   display: flex;
   align-items: center;
@@ -192,11 +191,11 @@ h4{
 }
 
 #fonctionnalite > div:first-child .fonction-texte, #fonctionnalite > div:last-child .fonction-texte {
-  order: 2;
+  order: 3;
 }
 
 #fonctionnalite > div:first-child .fonction-img, #fonctionnalite > div:last-child .fonction-img {
-  order: 1;
+  order: 2;
 }
 
 #demonstration {
@@ -287,6 +286,80 @@ footer {
   text-shadow: 0px 0px 0px #26F06A, 0px 0px 0px #26F06A, 0px 0px 0px #26F06A, 0px 0px 0px #26F06A;#
 }
 
-@media screen and (max-width 1200) {
+@media screen and (max-width: 920px) {
+  #nav-bar li {
+    font-size: 1.4rem;
+    padding: 0 5px 0 5px;
+  }
 
+  .fonction-texte {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #logo {
+    display: none;
+  }
+
+  #nav-bar ul {
+    justify-content: center;
+  }
+
+  #fonctionnalite > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px 0 10px;
+  }
+
+  #prix {
+    flex-wrap: wrap;
+  }
+
+  .choix {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #nav-bar ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav-bar li {
+    font-size: 1rem;
+    padding: 2.5px;
+  }
+
+  #nav-bar a {
+    text-shadow: none;
+  }
+
+  h1 {
+    font-size: 1rem
+  }
+
+  h1 > span {
+    font-size: 2rem
+  }
+
+  #welcome p {
+    font-size: 0.8rem;
+    top: 120px;
+    left: 380px;
+  }
+
+  #fonctionnalite > div {
+    flex-wrap: wrap;
+  }
+
+  .fonction-texte {
+    width: 80%;
+  }
+
+  #fonctionnalite > div:first-child .fonction-texte, #fonctionnalite > div:last-child .fonction-texte {
+    order: 1;
+  }
 }
