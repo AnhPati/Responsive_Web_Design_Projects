@@ -1,0 +1,251 @@
+/*##################
+  #### BASE ########
+  ##################*/
+
+body {
+  display: flex;
+  padding:  10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+pre {
+  width: 70rem;
+}
+
+/*####################
+  #### POLICES #######
+  ####################*/
+
+.big-title {
+  font-size: 3rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color:#130E0A;
+  font-weight: 700;
+}
+
+.mid-title {
+  font-size: 2.4rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color:#130E0A;
+  font-weight: 500;
+}
+
+.lil-title {
+  font-size: 1.8rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color:#130E0A;
+  font-weight: 400;
+}
+
+.big-paragraph {
+  font-size: 2rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #130E0A;
+  font-weight: 400;
+}
+
+.mid-paragraph {
+  font-size: 1.6rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #130E0A;
+  font-weight: 400;
+}
+
+.lil-paragraph {
+  font-size: 1.2rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #130E0A;
+  font-weight: 300;
+}
+
+/*####################
+  #### UTILITARY #####
+  ####################*/
+
+.u-flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-margin-bottom-xxs {
+  margin-bottom: 0.6rem;
+}
+
+.u-margin-bottom-xs {
+  margin-bottom: 1.1rem;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 2.2rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 3.8rem;
+}
+
+.u-margin-bottom-xl {
+  margin-bottom: 5rem;
+}
+
+/*##################
+  #### NAVBAR ######
+  ##################*/
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+  position: fixed;
+}
+
+.nav-title {
+  font-size: 2rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #130E0A;
+  font-weight: 700;
+}
+
+#navbar ul {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-link {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-link:hover {
+ background-color: red;
+ color: #fff;
+}
+
+.nav-link li {
+  padding: 10px;
+}
+
+#navbar hr {
+  width: 250px;
+  margin: 0px;
+}
+
+/*##################
+  #### MAIN ########
+  ##################*/
+
+#main-doc {
+  margin-left: 300px;
+  padding: 3rem 2rem 5rem 2rem;
+}
+
+.section-header {
+  width: 100%;
+  text-align: center;
+  color: #130E0A;
+}
+
+.section-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.section-content {
+  width: 100%;
+}
+
+/*########################
+  #### MEDIA QUERIES #####
+  ########################*/
+
+@media screen and (max-width: 1340px) {
+  pre {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  pre {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  pre {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  pre {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  body {
+    flex-direction: column;
+  }
+
+  pre {
+    width: 40rem;
+  }
+
+  #navbar {
+    width: 100%;
+    position: relative;
+    align-items: center;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  pre {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  pre {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  pre {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  pre {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  pre {
+    width: 15rem;
+  }
+}
+
