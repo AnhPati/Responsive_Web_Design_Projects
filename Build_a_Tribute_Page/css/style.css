@@ -1,9 +1,19 @@
-section {
+/*==========[[$LAYOUT]]===========*/
+
+section, #main, #img-div, #tribute-info ul {
   display: flex;
   flex-direction: column;
+}
+
+section, #main, #img-div {
   align-items: center;
+}
+
+section {
   width: 100%;
 }
+
+/*==========[[$POLICES]]===========*/
 
 p, h3 {
   border-radius: 10px;
@@ -19,10 +29,23 @@ h3 {
   background-color: #E5AB70;
 }
 
+#tribute-info  li {
+  color: #000000;
+}
+
+#tribute-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#tribute-info ul {
+  align-items: baseline;
+}
+
+/*==========[[$MAIN]]===========*/
+
 #main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #FFBE7D;
   width: auto;
   padding: 10px 15px 10px 15px;
@@ -37,9 +60,6 @@ h3 {
 }
 
 #img-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #FFFFFF;
   padding: 20px 20px 0 20px;
 }
@@ -59,20 +79,4 @@ h3 {
   background-color: #FFFFFF;
   width: 95%;
   padding: 20px;
-}
-
-#tribute-info ul {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
-
-#tribute-info  li {
-  color: #000000;
-}
-
-#tribute-link {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 700;
 }

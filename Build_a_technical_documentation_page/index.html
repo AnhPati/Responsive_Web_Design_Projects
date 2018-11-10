@@ -3,13 +3,14 @@
 
     <head>
 
-        <title>CCS - Documentation page</title>
+        <title>Freecodecamp Responsive Webdesign Projects - Documentation page</title>
         <meta charset="utf-8">
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Dosis" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Prosto+One" rel="stylesheet">
+        <link rel="stylesheet" href="css/atom-one-dark.css">
+        <script type="text/javascript" src="js/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
 
     </head>
     <body>
@@ -18,99 +19,880 @@
 
         <nav id="navbar">
           <header>
-            Documentation - Freecodecamp Responsive Webdesign Projects
+            <h1 class="nav-title">Documentation - Freecodecamp Responsive Webdesign Projects</h1>
           </header>
           <ul>
-            <li>
-              <a class="nav-link" href="#Tribute_Page">Tribute Page</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#Survey_Form">Survey Form</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#Product_Landing_Page">Product Landing Page</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#Technical_Documentation_Page">Technical Documentation Page</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#Personal_Portfolio_Webpage">Personal Portfolio Webpage</a>
-            </li>
+            <a class="lil-paragraph nav-link" href="#Tribute_Page">
+              <li>
+                Tribute Page
+              </li>
+            </a>
+              <hr>
+            <a class="lil-paragraph nav-link" href="#Survey_Form">
+              <li>
+                Survey Form
+              </li>
+            </a>
+              <hr>
+            <a class="lil-paragraph nav-link" href="#Product_Landing_Page">
+              <li>
+                Product Landing Page
+              </li>
+            </a>
+              <hr>
+            <a class="lil-paragraph nav-link" href="#Technical_Documentation_Page">
+              <li>
+                Technical Documentation Page
+              </li>
+            </a>
+              <hr>
+            <a class="lil-paragraph nav-link" href="#Personal_Portfolio_Webpage">
+              <li>
+                Personal Portfolio Webpage
+              </li>
+            </a>
+              <hr>
           </ul>
         </nav>
 
       </header>
-      <main id="main-doc">
+      <main id="main-doc" class="u-flex-column-centered">
 
-        <section id="Tribute_Page" class="main-section">
-          <header>
-            Tribute Page
+        <section id="Tribute_Page" class="main-section u-margin-bottom-lg u-flex-column-centered">
+          <header class="section-header u-margin-bottom-xl">
+            <h2 class="section-title mid-title">Tribute Page</h2>
+            <p class="mid-paragraph">Page hommage à Aimé Césaire, elle se compose d'une en-tête, d'une image et d'un corps de document.</p>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <p class="lil-paragraph">L'entête contient un titre souligné par une citation.</p>
+              <pre><code class="html">
+                <section>
+
+                  <h1 id="title">Lorem ipsum</h1>
+                  <p><em>« Lorem ipsum dolor sit amet. »</em> : Lorem ipsum dolor sit amet.</p>
+
+                </section>
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <p class="lil-paragraph u-margin-bottom-xxs">L'image s'accompagne d'une légende.</p>
+              <pre><code class="html">
+                <section>
+
+                  <div id="img-div">
+
+                    <img id="image" alt="Lorem ipsum" src="img/lorem_ipsum.jpg">
+                    <p id="img-caption">Lorem ipsum dolor sit amet.</p>
+
+                  </div>
+
+                </section>
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <p class="lil-paragraph u-margin-bottom-xxs">Le corps quant à lui, se compose de trois listes répertoriant la bibliographie d'Aimé Césaire, ainsi que d'un lien vers la page Wikipedia.</p>
+              <pre><code class="html">
+                <section id="tribute-info">
+                  <h2 class="section-title">Lorem ipsum dolor sit amet :</h2>
+                  <p>Lorem ipsum dolor sit amet, anim id est laborum.</p>
+                  <div>
+
+                    <h3>Lorem :</h3>
+                    <ul>
+
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+
+                    </ul>
+                    <h3>Lorem :</h3>
+                    <ul>
+
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+
+                    </ul>
+                    <h3>Lorem :</h3>
+                    <ul>
+
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+
+                    </ul>
+
+                  </div>
+
+                  <p>Lorem ipsum dolor sit amet, anim id est laborum <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Lorem_ipsum">Wikipedia</a>.</p>
+                </section>
+              </code></pre>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
+          <p class="lil-paragraph u-margin-bottom-xxs">Le style de la page se veut sobre et élégant. Elle se lit de haut en bas et les couleurs répondent aux normes d'accessibilité.</p>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">LAYOUT</h3>
+              <pre><code class="css">
+                section, #main, #img-div, #tribute-info ul {
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                section, #main, #img-div {
+                  align-items: center;
+                }
+
+                section {
+                  width: 100%;
+                }
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">POLICES</h3>
+              <pre><code class="css">
+                p, h3 {
+                  border-radius: 10px;
+                  padding: 5px 10px 5px 10px;
+                  text-align: center;
+                }
+
+                p {
+                  background-color: rgba(0, 0, 0, 0.1);
+                }
+
+                h3 {
+                  background-color: #E5AB70;
+                }
+
+                #tribute-info  li {
+                  color: #000000;
+                }
+
+                #tribute-link {
+                  color: #FFFFFF;
+                  text-decoration: none;
+                  font-weight: 700;
+                }
+
+                #tribute-info ul {
+                  align-items: baseline;
+                }
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">MAIN</h3>
+              <pre><code class="css">
+                #main {
+                  background-color: #FFBE7D;
+                  width: auto;
+                  padding: 10px 15px 10px 15px;
+                  margin: 20px;
+                  border-radius: 10px;
+                  color: #FFFFFF;
+                }
+
+                #title {
+                  text-align: center;
+                  vertical-align: middle;
+                }
+
+                #img-div {
+                  background-color: #FFFFFF;
+                  padding: 20px 20px 0 20px;
+                }
+
+                #image {
+                  margin: auto;
+                  max-width: 100%;
+                  height: auto;
+                }
+
+                #img-caption {
+                  background-color: #FFFFFF;
+                  color: #000000;
+                }
+
+                #tribute-info > div {
+                  background-color: #FFFFFF;
+                  width: 95%;
+                  padding: 20px;
+                }
+              </code></pre>
+            </li>
+          </ul>
         </section>
-        <section id="Survey_Form" class="main-section">
-          <header>
-            Survey Form
+        <section id="Survey_Form" class="main-section u-margin-bottom-lg u-flex-column-centered">
+          <header class="section-header u-margin-bottom-xl">
+            <h2 class="section-title mid-title">Survey Form</h2>
+            <p class="mid-paragraph">Sondage sous forme de formulaire à multi-champs, elle interroge son visiteur sur des questions sans trop de sens. Le but étant de décoder entre les lignes. Le formulaire se compose d'une partie <strong>présentations</strong>, d'une partie <strong>indiscrétions</strong> et d'une partie <strong>conclusions</strong>.</p>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">PRESENTATIONS</h3>
+              <p class="lil-paragraph u-margin-bottom-xxs">Ce <strong>fieldset</strong> réuni divers <code><input></code> contenant les questions. L'attribut <code>required</code> est essentiel pour forcer l'utilisateur à remplir le champs.</p>
+              <pre><code class="html">
+                <fieldset id="presentations">
+                  <legend>Présentations</legend>
+                  <div class="div-fieldset">
+                    <div>
+                      <div class="div-label">
+                        <label id="name-label" for="prenom">Comment dois-je vous appeler ?</label>
+                      </div>
+                      <div class="div-input">
+                        <input id="name" type="text" name="prenom" placeholder="Joe le hussard" required>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <div class="div-label">
+                        <label id="number-label" for="number">Et si je vous interroge sur le nombre de vos années ?</label>
+                      </div>
+                      <div class="div-input">
+                        <input id="number" type="number" name="age" min="1" max="150" placeholder="40">
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <div class="div-label">
+                        <label id="continent-label" for="continent">Veuillez indiquer votre continent de résidence :</label>
+                      </div>
+                      <div class="div-input">
+                        <select id="continent" name="continent">
+                          <option value="Afrique">Afrique</option>
+                          <option value="Amérique du Nord">Amérique du Nord</option>
+                          <option value="Amérique du Sud<">Amérique du Sud</option>
+                          <option value="Asie">Asie</option>
+                          <option value="Europe">Europe</option>
+                          <option value="Océanie">Océanie</option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <div class="div-label">
+                        <label id="occupation-label" for="occupation">Qu'est ce qui se rapproche le plus de votre principale occupation?</label>
+                      </div>
+                      <div class="div-input">
+                        <select id="occupation" name="occupation">
+                          <option value="Farniente">Farniente</option>
+                          <option value="Travail acharné">Travail acharné</option>
+                          <option value="Rente<">Rente</option>
+                          <option value="Art">Art</option>
+                          <option value="Voyage">Voyage</option>
+                          <option value="Bien plus encore">Bien plus encore</option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <div class="div-label">
+                        <label id="email-label" for="email">Afin de garder le contact, veuillez renseigner votre email :</label>
+                      </div>
+                      <div class="div-input">
+                        <input id="email" type="email" name="email" placeholder="monemail@maboite.com" required>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">INDISCRETIONS</h3>
+              <p class="lil-paragraph u-margin-bottom-xxs">Ce <strong>fieldset</strong> contient des <code><input></code> de type <code>"radio"</code>, qui doivent avoir le même attribut <code>name</code>. On y trouve également une liste déroulante dont l'identifiant est <code>"dropdown"</code>. Afin de positionner au mieux les éléments du formulaire, chaque <code><label></code> et chaque <code><input></code> se trouve dans une <strong>div</strong>.</p>
+              <pre><code class="html">
+                <fieldset id="indiscretions">
+                  <legend>Indiscrétions</legend>
+                  <div class="div-fieldset">
+                    <div>
+                      <p class="div-label">On peut dire que vous souriez...</p>
+                      <div class="div-input">
+                        <div>
+                          <div class="qc-label">
+                            <label id="travail-label" for="travail">A la sortie du travail.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="travail" type="radio" name="sourire" value="travail">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="moquerie-label" for="moquerie">Lorsque quelqu'un se ramasse à terre.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="moquerie" type="radio" name="sourire" value="moquerie">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label class="" id="toujours-label" for="toujours">Du réveil au coucher !</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="toujours" type="radio" name="sourire" value="toujours">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <p class="div-label">Pourriez vous vivre en dessous de 200 jours d'ensoleillement par an ?</p>
+                      <div class="div-input">
+                        <div>
+                          <div class="qc-label">
+                            <label id="soleil-label" for="soleil-oui">C'est déjà le cas...</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="soleil-oui" type="radio" name="soleil" value="oui">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="soleil-label" for="soleil-non">Impossible !</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="soleil-non" type="radio" name="soleil" value="non">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div id="div-dropdown">
+                      <div class="div-label">
+                        <label id="definition-label" for="dropdown">Quel est l'adjectif qui vous définit le mieux ?</label>
+                      </div>
+                      <div class="div-input">
+                        <select id="dropdown" name="definition">
+                          <option value="Aventureu.se.x">Aventureu.se.x</option>
+                          <option value="Opportuniste">Opportuniste</option>
+                          <option value="Prudent.e<">Prudent.e</option>
+                          <option value="Patient.e">Patient.e</option>
+                          <option value="Coquin.e">Coquin.e</option>
+                          <option value="Blasé.e">Blasé.e</option>
+                        </select>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <p class="div-label">Parmi les activités suivantes, lesquelles aimeriez vous réaliser, que ce soit déjà ou non le cas ?</p>
+                      <div class="div-input">
+                        <div>
+                          <div class="qc-label">
+                            <label id="voler-label" for="voler">Voler dans un magasin.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="voler" type="checkbox" name="activite" value="voler">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="charite-label" for="charite">Faire don de tous ses biens matériels.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="charite" type="checkbox" name="activite" value="charite">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="inconnu-label" for="inconnu">Coucher avec un inconnu.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="inconnu" type="checkbox" name="activite" value="inconnu">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="lit-label" for="lit">Passer + 48h au lit.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="lit" type="checkbox" name="activite" value="lit">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="manger-label" for="manger">Manger du caviar.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="manger" type="checkbox" name="activite" value="manger">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="embrasser-label" for="embrasser">Embrasser sans prévenir quelqu'un qui ne s'y attend pas.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="embrasser" type="checkbox" name="activite" value="embrasser">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="taxi-label" for="taxi">Faire un taxi basket.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="taxi" type="checkbox" name="activite" value="taxi">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="peur-label" for="peur">Réaliser quelque chose qui vous terrifie.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="peur" type="checkbox" name="activite" value="peur">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <p class="div-label">Pensez très fort à quelqu'un et choisissez dans la liste suivante les expressions qui vous viennent à l'esprit :</p>
+                      <div class="div-input">
+                        <div>
+                          <div class="qc-label">
+                            <label id="mort-label" for="mort">Jusqu'à la mort.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="mort" type="checkbox" name="activite" value="mort">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="laid-label" for="laid">Comme un pou.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="laid" type="checkbox" name="activite" value="laid">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="rapidite-label" for="rapidite">Sensible à la gachette.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="rapidite" type="checkbox" name="activite" value="rapidite">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="amour-label" for="amour">L'inaccessible.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="amour" type="checkbox" name="activite" value="amour">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="mensonge-label" for="mensonge">Comme il respire.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="mensonge" type="checkbox" name="activite" value="mensonge">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="beau-label" for="beau">Comme un dieu.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="beau" type="checkbox" name="activite" value="beau">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="fatiguant-label" for="fatiguant">A petite dose.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="fatiguant" type="checkbox" name="activite" value="fatiguant">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="sexe-label" for="sexe">La culotte qui palpite.</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="sexe" type="checkbox" name="activite" value="sexe">
+                          </div>
+                        </div>
+                      <div>
+                    </div>
+                  </div>
+                </fieldset>
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">CONCLUSIONS</h3>
+              <p class="lil-paragraph u-margin-bottom-xxs">Ce <strong>fieldset</strong> contient des <code><input></code> de type <code>"radio"</code>, ainsi qu'un <strong>textarea</strong>. Chaque <strong>fieldset</strong> contient une <strong>div</strong> dont la classe est <code>"div-fieldset"</code> afin de rendre flex ce conteneur. Encore aujourd'hui la propriété <code>display: flex;</code> n'est pas pris en compte sur Chrome.</p>
+              <pre><code class="html">
+                <fieldset id="conclusions">
+                  <legend>Conclusions</legend>
+                  <div class="div-fieldset">
+                    <div>
+                      <p class="div-label">Seriez vous prêt à répondre à d'autres questionnaires ?</p>
+                      <div class="div-input">
+                        <div>
+                          <div class="qc-label">
+                            <label id="questionnaire-label" for="questionnaire-oui">Avec plaisir !</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="questionnaire-oui" type="radio" name="questionnaire" value="oui">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="qc-label">
+                            <label id="questionnaire-label" for="questionnaire-non">Hors de question !</label>
+                          </div>
+                          <div class="qc-input">
+                            <input id="questionnaire-non" type="radio" name="questionnaire" value="non">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div>
+                      <div class="div-label">
+                        <label id="commentaire-label" for="commentaire">Sauriez-vous dire pourquoi êtes-vous allé jusqu'au bout de ce sondage ?</label>
+                      </div>
+                      <div class="div-input">
+                        <textarea id="commentaire" name="commentaire" rows="8"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </code></pre>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
+          <p class="lil-paragraph u-margin-bottom-xxs">Les styles apportés à la page la rende totalement responsive. Les propriétés <code>display: flex;</code> et <code>flex-direction: column;</code> prédominent dans les conteneurs principaux pour une lecture de haut en bas. Sur les conteneurs plus profonds, on est au départ en <code>flex-direction: row;</code>. Des media queries permettent d'adapter le style à la taille de l'écran.</p>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">LAYOUT</h3>
+              <pre><code class="css">
+                main {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: space-around;
+                  background-color: #053671;
+                  color: #FFFFFFFF;
+                  font-family: 'Nunito', sans-serif;
+                  margin: 20px;
+                  border-radius: 20px;
+                  padding: 20px 25px 20px 25px;
+                }
+
+                form {
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                .div-fieldset {
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                .div-fieldset > div {
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                }
+
+                .div-label, .div-input {
+                  display: flex;
+                }
+
+                .div-label {
+                  width: 45%;
+                  justify-content: flex-end;
+                  text-align: end;
+                  margin-right: 10px;
+                }
+
+                .div-input {
+                  width: 45%;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-left: 10px;
+                }
+
+                .div-input > div {
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  flex-direction: row-reverse;
+                }
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">POLICES</h3>
+              <pre><code class="css">
+                h1 {
+                  font-size: 2.6em;
+                  font-weight: 700;
+                }
+
+                #description {
+                  font-size: 1.3em;
+                  font-weight: 500;
+                }
+
+                legend {
+                  font-size: 1.1em;
+                  font-weight: 500;
+                }
+
+                p, label, input[type="text"], input[type="number"], select {
+                  font-size: 1em;
+                  font-weight: 400;
+                }
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">COMPOSANTS</h3>
+              <pre><code class="css">
+                fieldset {
+                  border-style: solid;
+                  border-color: #FFFFFF;
+                }
+
+                hr {
+                  width: 50%;
+                  display: inline-block;
+                  border-style: double;
+                  background-color: #FFFFFFFF;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                }
+
+                #submit {
+                  width: 200px;
+                  height: 50px;
+                  border-radius: 10px;
+                  border: 5px double #053671;
+                  background-color: #FFFFFF;
+                  color: #053671;
+                  font-family: 'Nunito', sans-serif;
+                  font-size: 1em;
+                  font-weight: 600;
+                  margin-top: 20px;
+                  align-self: center;
+                }
+
+                input[type="text"], input[type="number"], input[type="email"], select, textarea {
+                  border-radius: 10px;
+                  border: 5px double #053671;
+                  padding: 5px;
+                  color: #053671;
+                  text-align: center;
+                }
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">EXTRAS</h3>
+              <pre><code class="css">
+                #description, h1 {
+                  text-align: center;
+                }
+
+                #indiscretions, #conclusions {
+                  margin-top: 20px;
+                }
+
+                #commentaire {
+                  width: 100%;
+                }
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">MEDIA QUERIES</h3>
+              <pre><code class="css">
+                @media screen and (max-width: 1200px) {
+                  .div-label, .div-input {
+                    width: auto;
+                  }
+
+                  .div-label {
+                    justify-content: center;
+                    text-align: inherit;
+                  }
+                }
+
+                @media screen and (max-width: 680px) {
+                  .div-fieldset > div {
+                    justify-content: center;
+                  }
+
+                  main {
+                    padding: 10px 15px 10px 15px;
+                    margin: 0;
+                  }
+
+                  .div-input > div {
+                    align-items: flex-start;
+                    flex-direction: column;
+                  }
+
+                  h1 {
+                    font-size: 5em;
+                  }
+
+                  legend {
+                    font-size: 2.6em;
+                  }
+
+                  #description {
+                    font-size: 3em;
+                  }
+
+                  p, label, input[type="text"], input[type="number"], select {
+                    font-size: 1.8em;
+                  }
+                }
+              </code></pre>
+            </li>
+          </ul>
         </section>
-        <section id="Product_Landing_Page" class="main-section">
-          <header>
-            Product Landing Page
+        <section id="Product_Landing_Page" class="main-section u-margin-bottom-lg u-flex-column-centered">
+          <header class="section-header u-margin-bottom-xl">
+            <h2 class="section-title mid-title">Product Landing Page</h2>
+            <p class="mid-paragraph">C'est une page d'accueil pour vendre des produits: en l'occurrence du ruban adhésif phosphorescent. Cette page est une <em>onepage</em>, voila pourquoi on y retrouve <strong>header</strong> contenant un menu de navigation afin de s'y déplacer plus simplement, ainsi qu'un <strong>footer</strong> accueillant l'ensemble des informations sur la société. La <strong>div</strong> principale, quant à elle, contient 3 sections bien distinctes : la présentation avec le <em>call-to-action</em>, la vidéo et le détail des produits avec le <em>CTA</em> pour passer commande.</p>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs">HEADER</h3>
+              <p class="lil-paragraph u-margin-bottom-xxs">Le <strong>header</strong> est en <code>display: flex;</code> et <code>flex-direction: row;</code>, à l'instar de la balise <code>< nav ></code> et la balise <code>< ul ></code> qu'elle contient. La <strong>div</strong> avec l'identifiant <code>#logo</code> permet de gérer la taille de l'image dans l'en-tête, un lien y est insérer afin que le clic sur l'image renvoie à la première partie de la page.
+              <pre><code class="html">
+                <header id="header">
+
+                  <div id="logo">
+                    <a href="#welcome">
+                      <img id="header-img" src="img/glowing_logo.jpg" alt="Glovers">
+                    </a>
+                  </div>
+                  <nav id="nav-bar">
+                    <ul>
+                      <li><a class="nav-link" href="#fonctionnalite">Fonctionnalités</a></li>
+                      <li><a class="nav-link" href="#demonstration">Démonstration</a></li>
+                      <li><a class="nav-link" href="#prix">Prix</a></li>
+                    </ul>
+                  </nav>
+
+                </header>
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
+          <p class="lil-paragraph u-margin-bottom-xxs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
         </section>
-        <section id="Technical_Documentation_Page" class="main-section">
-          <header>
-            Technical Documentation Page
+        <section id="Technical_Documentation_Page" class="main-section u-margin-bottom-lg u-flex-column-centered">
+          <header class="section-header u-margin-bottom-xl">
+            <h2 class="section-title mid-title">Technical Documentation Page</h2>
+            <p class="mid-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
+          <p class="lil-paragraph u-margin-bottom-xxs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
         </section>
-        <section id="Personal_Portfolio_Webpage" class="main-section">
-          <header>
-            Personal Portfolio Webpage
+        <section id="Personal_Portfolio_Webpage" class="main-section u-margin-bottom-lg u-flex-column-centered">
+          <header class="section-header u-margin-bottom-xl">
+            <h2 class="section-title mid-title">Personal Portfolio Webpage</h2>
+            <p class="mid-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="section-container u-flex-column-centered">
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
+            <li class="section-content u-margin-bottom-md u-flex-column-centered">
+              <h3 class="lil-title u-margin-bottom-xs"></h3>
+              <p class="lil-paragraph u-margin-bottom-xxs"></p>
+              <pre><code class="html">
+
+              </code></pre>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
+          <p class="lil-paragraph u-margin-bottom-xxs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<code></code></p>
         </section>
 
       </main>
@@ -119,6 +901,8 @@
 
 
       </footer>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script type="text/javascript" src="js/code_display.js"></script>
 
     </body>
 
