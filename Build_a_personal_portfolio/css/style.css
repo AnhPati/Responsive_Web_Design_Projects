@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+svg {
+  max-width: 100%;
+}
+
 /*######################
   ##### TYPOGRAPHY #####
   ######################*/
@@ -35,6 +39,16 @@ a {
 /*######################
   ##### UTILITARY #####
   ######################*/
+
+.uBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uBox.centered {
+  justify-content: center;
+  align-items: center;
+}
 
 .uBoxColumn {
     display: flex;
@@ -90,7 +104,15 @@ a {
 /*#############################
   ##### PROJECTS SECTIONS #####
   #############################*/
+.projects-boxTitle {
+  width: 100%;
+}
 
+.projects-item {
+  max-width: 40%;
+  padding: 1.6rem;
+  margin: 1rem;
+}
 /*############################
   ##### CONTACTS SECTION #####
   ############################*/
