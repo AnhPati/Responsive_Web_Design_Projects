@@ -29,12 +29,50 @@ a {
 }
 
 svg {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
 }
 
 /*######################
   ##### TYPOGRAPHY #####
   ######################*/
+
+.big-title {
+  font-size: 4.4rem;
+  font-weight: 700;
+  font-family: 'Mukta', sans-serif;
+}
+
+.mid-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: 'Mukta', sans-serif;
+}
+
+.lil-title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  font-family: 'Mukta', sans-serif;
+}
+
+.big-paragraph {
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: 'Mukta', sans-serif;
+}
+
+.mid-paragraph {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: 'Mukta', sans-serif;
+}
+
+.lil-paragraph {
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: 'Mukta', sans-serif;
+}
 
 /*######################
   ##### UTILITARY #####
@@ -51,18 +89,53 @@ svg {
 }
 
 .uBoxColumn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .uBoxColumn.centered {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-/*#####################
-  ###### BUTTONS ######
-  #####################*/
+.uMargin-bottom-xs {
+  margin-bottom: 0.6rem;
+}
+
+.uMargin-bottom-sm {
+  margin-bottom: 1.2rem;
+}
+
+.uMargin-bottom-md {
+  margin-bottom: 2rem;
+}
+
+.uMargin-bottom-lg {
+  margin-bottom: 3.2rem;
+}
+
+.uMargin-bottom-xl {
+  margin-bottom: 4.6rem;
+}
+
+/*########################
+  ###### ANIMATIONS ######
+  ########################*/
+
+/* Rotate */
+.rotate {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.rotate:hover, .rotate:focus, .rotate:active {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 
 /*#################
   ##### FORMS #####
@@ -82,45 +155,242 @@ svg {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 200;
+    flex-wrap: wrap;
 }
 
 .headerNav-link {
     height: 100%;
-    padding: 0.8rem;
-    color: #000;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    color: #007166;
     display: flex;
     align-items: center;
 }
 
 .headerNav-link:hover {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 113, 102, 0.8);
 }
 
 /*###########################
   ##### WELCOME SECTION #####
   ###########################*/
+.welcomeSection-container {
+  margin-top: 10rem;
+  background-color: #007166;
+  color: #FFFFFF;
+}
 
+.welcomeSection-item {
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+}
 /*#############################
   ##### PROJECTS SECTIONS #####
   #############################*/
-.projects-boxTitle {
+.project-title {
   width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+  color: #007166;
 }
 
 .projects-item {
-  max-width: 40%;
-  padding: 1.6rem;
-  margin: 1rem;
+  width: 30%;
+  margin: 2rem;
+  overflow: hidden;
+  position: relative;
 }
+
+.projects-itemImg {
+  display: flex;
+}
+
+.projects-itemImg > svg, .projects-itemsImg > img {
+  margin: auto;
+}
+
+.miste {
+  position: absolute;
+  bottom: -250px;
+  width: 100%;
+  left: 0;
+  color: #007166;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  -webkit-transition: bottom 0.8s ease;
+  -o-transition: bottom 0.8s ease;
+  transition: bottom 0.8s ease;
+  z-index: 50;
+}
+
+.projects-item:hover .miste {
+  bottom: 0px;
+}
+
+.projects-itemTitle {
+  text-align: center; 
+}
+
 /*############################
   ##### CONTACTS SECTION #####
   ############################*/
 
+.contactsTitle-box {
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #007166;
+}
+
+.contactsTitle-item {
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.contactsContent-link {
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+}
+
+.contactsContent-link > img {
+  margin: auto;
+}
+
+#malt-link {
+  width: 100px;
+  height: 100px;
+}
+
+#malt-link img {
+  max-width: 68%;
+}
+
 /*##################
   ##### FOOTER #####
   ##################*/
+.footerContainer {
+  width: 100%;
+  background-color: #007166;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerContainer-item {
+  width: 20%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #FFFFFF;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footerContainer-img {
+  max-width: 250px;
+}
+
+.footerContainer-img img {
+  max-width: 100%;
+}
+
+.footerList {
+  list-style-type: none;
+  padding-left: 0;
+}
 
 /*#########################
   ##### MEDIA QUERIES #####
   #########################*/
+
+  @media screen and (max-width: 768px) {
+    .headerNav {
+      justify-content: space-between;
+    }
+
+    .headerNav-link {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+    }
+
+    .welcomeSection-container {
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+
+    .big-title {
+      font-size: 3.8rem;
+      font-weight: 700;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .mid-title {
+      font-size: 2.2rem;
+      font-weight: 600;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .lil-title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .big-paragraph {
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .mid-paragraph {
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .lil-paragraph {
+      font-size: 1rem;
+      font-weight: 300;
+      font-family: 'Mukta', sans-serif;
+    }
+
+    .headerNav {
+      height: 12rem;
+    }
+
+    .headerNav-link {
+      width: 100%;
+      text-align: center;
+      height: 2.6rem;
+      display: flex;
+      justify-content: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .welcomeSection-container {
+      margin-top: 16.55rem;
+    }
+
+    .projects-item {
+        width: 100%;
+    }
+
+    .miste {
+      bottom: 0px;
+    }
+
+    .footerContainer {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .footerContainer-item {
+      width: 100%;
+    }
+  }
