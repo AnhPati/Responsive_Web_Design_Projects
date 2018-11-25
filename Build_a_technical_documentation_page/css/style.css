@@ -209,12 +209,31 @@ pre {
 
   #navbar {
     width: 100%;
-    position: relative;
+    background-color: #FFFF;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
     align-items: center;
+  }
+
+  .nav-link {
+    text-align: center;
   }
 
   #main-doc {
     margin-left: 0;
+  }
+
+  .uNav-padding {
+    padding-top: 350px;
   }
 }
 
@@ -240,6 +259,49 @@ pre {
   pre {
     width: 20rem;
   }
+
+  .big-title {
+    font-size: 2.5rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #130E0A;
+    font-weight: 700;
+  }
+
+  .mid-title {
+    font-size: 2rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #130E0A;
+    font-weight: 500;
+  }
+
+  .lil-title {
+    font-size: 1.4rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #130E0A;
+    font-weight: 400;
+  }
+
+  .big-paragraph {
+    font-size: 1.6rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #130E0A;
+    font-weight: 400;
+  }
+
+  .mid-paragraph {
+    font-size: 1.1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #130E0A;
+    font-weight: 400;
+  }
+
+  .lil-paragraph {
+    font-size: 0.9rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #130E0A;
+    font-weight: 300;
+  }
+
 }
 
 @media screen and (max-width: 350px) {
