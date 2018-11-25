@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
 /*==========[[$LAYOUTS]]=========*/
 main {
   display: flex;
@@ -7,7 +12,7 @@ main {
   background-color: #053671;
   color: #FFFFFFFF;
   font-family: 'Nunito', sans-serif;
-  margin: 20px;
+  margin: 5px;
   border-radius: 20px;
   padding: 20px 25px 20px 25px;
 }
@@ -169,5 +174,28 @@ input[type="text"], input[type="number"], input[type="email"], select, textarea 
 
   p, label, input[type="text"], input[type="number"], select {
     font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+   h1 {
+     font-size: 3.4em;
+   }
+
+   legend {
+     font-size: 2.2em;
+   }
+
+   #description {
+     font-size: 1.8em;
+   }
+
+  p,
+  label,
+  input[type="text"],
+  input[type="number"],
+  select {
+    font-size: 1.3em;
   }
 }
