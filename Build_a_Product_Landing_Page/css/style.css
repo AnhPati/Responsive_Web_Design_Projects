@@ -11,7 +11,6 @@ header, main, footer, #nav-bar ul {
   font-size: 1rem;
 }
 
-
 #nav-bar {
   display: flex;
   align-items: center;
@@ -300,7 +299,7 @@ footer {
 
 .block-footer a {
   color: #000000;
-  text-shadow: 0px 0px 0px #26F06A, 0px 0px 0px #26F06A, 0px 0px 0px #26F06A, 0px 0px 0px #26F06A;#
+  text-shadow: 0px 0px 0px #26F06A, 0px 0px 0px #26F06A, 0px 0px 0px #26F06A, 0px 0px 0px #26F06A;
 }
 
 @media screen and (max-width: 1200px) {
